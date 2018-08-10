@@ -1,0 +1,66 @@
+html,body{
+  height:100%;
+}
+*{
+  margin:0;
+  padding:0;
+}
+.sideBar {
+  position:fixed!important;
+  float:left;
+  min-height: 100%;
+  width: 20%;
+  background-color: #202020;
+  
+  }
+.sideBarButton {
+  text-align: center;
+  width: auto;
+  vertical-align: middle;
+  padding: 8px 35%;
+  padding-top:20px;
+  padding-bottom: 20px;
+  font-size: 120%;
+  display: block;
+  color: white;
+  transition: background-color .5s;
+}
+.sideBarButton:hover {
+  background-color: #000000;
+}
+.mainBody {
+  float: right;
+  width: 80%;
+  min-height:100%;
+  text-align: center;
+}
+.topText {
+  padding: 20px;
+}
+.textContainer {
+  position: relative;
+  background-color: lightgrey;
+  width: 90%;
+  margin: auto;
+  height: auto;
+  box-shadow: 3px 3px 5px grey;
+}
+.sortTypeSelect {
+    position: static;
+    float: right;
+}
+.textArea {
+  padding-top: 50px;
+  padding-bottom: 40px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: left;
+  height: auto;
+}
+.ulArea {
+    padding-top: 15px;
+    padding-left: 20px;
+}
+.arrayDisplay {
+    display: inline;
+}

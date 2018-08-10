@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Code Demos</title>
+    <link rel="stylesheet" href="/styles/styles.css">
+    <script src="/scripts/js algorithms/bubbleSort.js"></script>
+    <script src="/scripts/js algorithms/quickSort.js"></script>
+  <!--  <script src="/scripts/js algorithms/combSort.js"></script> -->
+    <script src="/scripts/buttonLogic.js"></script>
+  </head>
+  <body>
+    <div class="mainBody">
+      <div id="topText" class="topText"></div>
+     
+      <div class="textContainer">
+        <select id ="sortTypeSelect" class="sortTypeSelect">
+          <option value="bubbleSort">Bubble Sort</option>
+          <option value="quickSort">Quick Sort</option>
+          <option value="combSort">Comb Sort (not implemented)</option>
+          <option value="insertionSort">Insertion Sort (not implemented)</option>
+          <option value="selectionSort">Selection Sort (not implemented)</option>
+        </select>
+        <div id="textArea" class="textArea">
+          <div id="quickSort">
+            <form name="numFieldForm" onkeypress="return event.keyCode != 13">
+              Please type an integer to be added to the array that will be sorted,
+              then press add or enter. Once finished, press sort.
+              <br>
+              <input type="number" id="numField1" name="numField1">
+              <button type="button" id="addButton" onclick="printNumField(Number(numField1.value))">Add</button>
+              <button type="button" id="sortButton" onclick="printSortedNumField()">Sort</button>
+              <button type="button" onclick="clearNumArray()">Clear Array</button>              
+            </form> 
+            <p id="numField1Output" class="arrayDisplay">Input: </p>
+            <br>
+            <p id="numField1Sorted" class="arrayDisplay">Sorted: </p>
+            <script>document.getElementById("numField1")
+            .addEventListener("keydown", function(event) {
+                if (event.keyCode === 13) {
+                    document.getElementById("addButton").click();
+                }
+            });</script>
+          </div>
+        </div>
+      </div>
+    </div>
+   
+    <div class="sideBar">
+      <a href="index.html" class="sideBarButton">Home</a>
+      <a href="codeDemo.html" class="sideBarButton">Code Demo</a>
+      <a href="about.html" class="sideBarButton">About</a>
+    </div>
+    
+
+
+  </body>
+</html>
