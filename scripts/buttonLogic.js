@@ -71,4 +71,13 @@ function selectedSort(sortType, array) {
     if(sortType == "bubbleSort") {
         bubbleSort(array);
     }
+    if(sortType == "combSort") {
+        alert("This sorting algorithm has not been implemented yet, please choose another");
+    }
+    if(sortType == "insertionSort") {
+        alert("This sorting algorithm has not been implemented yet, please choose another");
+    }
+    if(sortType == "selectionSort") {
+        alert("This sorting algorithm has not been implemented yet, please choose another");
+    }
 }
