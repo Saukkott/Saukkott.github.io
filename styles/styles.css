@@ -34,7 +34,7 @@ html,body{
   min-height:100%;
   text-align: center;
 }
-.topText {
+.textContainerTitle {
   padding: 20px;
 }
 .textContainer {
