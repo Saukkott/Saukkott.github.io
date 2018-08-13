@@ -29,7 +29,6 @@ function quickSort(arr, start, end) {
         quickSort(arr, p_index + 1, end);      
     }
     return arr;
-    console.log("quickSort");
 }
 
 function swap(arr, a, b) {

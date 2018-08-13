@@ -10,7 +10,6 @@ function bubbleSort(arr){
         }
     } while(swapped);
     return arr;
-    console.log("bubbleSort");
 }
 
 function swap(arr, i, j) {
