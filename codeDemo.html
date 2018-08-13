@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="/styles/styles.css">
     <script src="/scripts/js algorithms/bubbleSort.js"></script>
     <script src="/scripts/js algorithms/quickSort.js"></script>
-  <!--  <script src="/scripts/js algorithms/combSort.js"></script> -->
+    <script src="/scripts/js algorithms/combSort.js"></script>
     <script src="/scripts/buttonLogic.js"></script>
   </head>
   <body>
@@ -34,6 +34,8 @@
             <p id="numField1Output" class="arrayDisplay">Input: </p>
             <br>
             <p id="numField1Sorted" class="arrayDisplay">Sorted: </p>
+            <!-- this script is to allow the enter key to be used
+                 in place of pressing the add button -->
             <script>document.getElementById("numField1")
             .addEventListener("keydown", function(event) {
                 if (event.keyCode === 13) {
