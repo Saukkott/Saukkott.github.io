@@ -5,7 +5,7 @@
 var numArray = [];
 
 //pushes entered numbers into an array 
-//and prints them in the numField1Output <p>
+//and prints them in the numField1Input <p>
 function printNumField(numField) {
     /* prevents an empty entry
      * and numbers smaller or larger than the MIN_SAFE_INTEGER
@@ -16,7 +16,7 @@ function printNumField(numField) {
     && numField >= Number.MIN_SAFE_INTEGER
     && numField <= Number.MAX_SAFE_INTEGER) {
         numArray.push(numField);
-        document.getElementById("numField1Output")
+        document.getElementById("numField1Input")
         .innerHTML +=numArray[numArray.length - 1] + " ";
         document.forms["numFieldForm"].reset();
         document.getElementById("numField1").focus();
@@ -54,10 +54,21 @@ function printSortedNumField() {
 
 function clearNumArray() {
     numArray = [];
-    document.getElementById("numField1Output")
+    document.getElementById("numField1Input")
     .innerHTML = "Input: ";
     document.getElementById("numField1Sorted")
     .innerHTML = "Sorted: ";
+}
+
+function randomizeArray() {
+    clearNumArray();
+    //assigns 10 random numbers between 0 and 100 to numArray
+    for(var i = 0; i < 10; i++) {
+        numArray[i] = Math.floor((Math.random() * 100) + 1);
+    }
+    for(var i = 0; i < numArray.length; i++) {
+            document.getElementById("numField1Input")
+            .innerHTML += numArray[i] + " ";
 }
 
 //allows use of different sortTypes in one HTML page

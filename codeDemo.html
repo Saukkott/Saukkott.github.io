@@ -24,14 +24,15 @@
           <div id="quickSort">
             <form name="numFieldForm" onkeypress="return event.keyCode != 13">
               Please type an integer to be added to the array that will be sorted,
-              then press add or enter. Once finished, press sort.
+              then press add or enter. Once finished, press sort. Randomize will fill the array with 10 random numbers.
               <br>
               <input type="number" id="numField1" name="numField1">
               <button type="button" id="addButton" onclick="printNumField(Number(numField1.value))">Add</button>
               <button type="button" id="sortButton" onclick="printSortedNumField()">Sort</button>
-              <button type="button" onclick="clearNumArray()">Clear Array</button>              
+              <button type="button" onclick="clearNumArray()">Clear Array</button>
+              <button type="button" onclick="randomizeArray()">Ranomize Array</button>
             </form> 
-            <p id="numField1Output" class="arrayDisplay">Input: </p>
+            <p id="numField1Input" class="arrayDisplay">Input: </p>
             <br>
             <p id="numField1Sorted" class="arrayDisplay">Sorted: </p>
             <!-- this script is to allow the enter key to be used
