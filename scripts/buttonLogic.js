@@ -87,6 +87,6 @@ function selectedSort(sortType, array) {
         insertionSort(array);
     }
     if(sortType == "selectionSort") {
-        alert("This sorting algorithm has not been implemented yet, please choose another");
+        selectionSort(array);
     }
 }
