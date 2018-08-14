@@ -22,7 +22,8 @@ function printNumField(numField) {
         document.getElementById("numField1").focus();
     }
     else {
-        alert("Please enter a number before pressing add");
+        alert("Please enter a number between -9 quadrillion and \
+        9 quadrillion (16 digits) before pressing add");
     }
 }
 
