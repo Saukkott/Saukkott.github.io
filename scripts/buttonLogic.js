@@ -69,6 +69,7 @@ function randomizeArray() {
     for(var i = 0; i < numArray.length; i++) {
             document.getElementById("numField1Input")
             .innerHTML += numArray[i] + " ";
+    }
 }
 
 //allows use of different sortTypes in one HTML page
