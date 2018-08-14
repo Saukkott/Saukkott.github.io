@@ -7,7 +7,6 @@ var numArray = [];
 //pushes entered numbers into an array 
 //and prints them in the numField1Output <p>
 function printNumField(numField) {
-
     /* prevents an empty entry
      * and numbers smaller or larger than the MIN_SAFE_INTEGER
      * and MAX_SAFE_INTEGER respectively, both ~9 quadrillion
@@ -28,7 +27,6 @@ function printNumField(numField) {
 }
 
 function printSortedNumField() {
-    
     //clears sorted area output
     document.getElementById("numField1Sorted")
     .innerHTML = "Sorted: ";
@@ -63,8 +61,6 @@ function clearNumArray() {
 
 //allows use of different sortTypes in one HTML page
 function selectedSort(sortType, array) {
-    //copies array before sending it to be sorted
-    //to conserve original array
     if(sortType == "quickSort") {
         quickSort(array, 0, array.length - 1);
     }
@@ -75,7 +71,7 @@ function selectedSort(sortType, array) {
         combSort(array);
     }
     if(sortType == "insertionSort") {
-        alert("This sorting algorithm has not been implemented yet, please choose another");
+        insertionSort(array);
     }
     if(sortType == "selectionSort") {
         alert("This sorting algorithm has not been implemented yet, please choose another");
