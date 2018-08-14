@@ -31,7 +31,7 @@ function printSortedNumField() {
     document.getElementById("numField1Sorted")
     .innerHTML = "Sorted: ";
     
-    //holds the value or sortTypeSelect
+    //holds the value of sortTypeSelect
     var element = document.getElementById("sortTypeSelect");
     var selectedSortType = element.options[element.selectedIndex].value;
     console.log(selectedSortType);
