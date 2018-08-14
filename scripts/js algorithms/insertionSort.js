@@ -1,11 +1,9 @@
 function insertionSort(array) {
-    var i,
-        keyValue,
-        j;
-    for(i = 1; i < array.length; i++) {
+    var keyValue;
+    for(var i = 1; i < array.length; i++) {
         // stores value to be sorted as keyValue
         keyValue = array[i];
-        j = i - 1;
+        var j = i - 1;
         
         /* moves sorted array section over to the left
          * by 1 until keyValue is placed properly
