@@ -2,7 +2,7 @@ function insertionSort(array) {
     var i,
         keyValue,
         j;
-    for(i = 1; i < array.length - 1; i++) {
+    for(i = 1; i < array.length; i++) {
         // stores value to be sorted as keyValue
         keyValue = array[i];
         j = i - 1;
