@@ -29,8 +29,8 @@ function binarySearch(array, num, start, end) {
     if(num == array[mid]) {
         return mid + 1;
     }
-    if(num > array[mid]) {
-        return binarySearch(array, num, mid + 1, end);
+    if(num < array[mid]) {
+        return binarySearch(array, num, start, mid - 1);
     }
-    return binarySearch(array, num, start, mid - 1);
+    return binarySearch(array, num, mid + 1, end);
 }
