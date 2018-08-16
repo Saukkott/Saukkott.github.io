@@ -89,4 +89,7 @@ function selectedSort(sortType, array) {
     if(sortType == "selectionSort") {
         selectionSort(array);
     }
+    if(sortType == "binaryInsertionSort") {
+        binaryInsertionSort(array);
+    }
 }
