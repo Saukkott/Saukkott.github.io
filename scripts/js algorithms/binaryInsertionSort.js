@@ -1,4 +1,4 @@
-function insertionSort(array) {
+function binaryInsertionSort(array) {
     for(var i = 1; i < array.length; i++) {
         var keyValue = array[i];
         var j = i - 1;
