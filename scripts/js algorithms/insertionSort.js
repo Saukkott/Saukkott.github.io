@@ -5,7 +5,7 @@ function insertionSort(array) {
         keyValue = array[i];
         var j = i - 1;
         
-        /* moves sorted array section over to the left
+        /* moves sorted array section over to the right
          * by 1 until keyValue is placed properly
          */
         while(j >= 0 && array[j] > keyValue) {
