@@ -73,6 +73,7 @@ function randomizeArray() {
 }
 
 //allows use of different sortTypes in one HTML page
+//TODO: implement custom ending and starting indexes
 function selectedSort(sortType, array) {
     if(sortType == "quickSort") {
         quickSort(array, 0, array.length - 1);
@@ -91,5 +92,9 @@ function selectedSort(sortType, array) {
     }
     if(sortType == "binaryInsertionSort") {
         binaryInsertionSort(array);
+    }
+    if(sortType == "mergeSort") {
+        // array, starting index, ending index
+        mergeSort(array, 0, array.length - 1)
     }
 }
