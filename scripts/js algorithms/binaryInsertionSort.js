@@ -24,7 +24,7 @@ function binarySearch(array, num, start, end) {
         return (num > array[start]) ? start + 1 : start;
     }
     
-    mid = start + ((end - start) / 2);
+    mid = (start + end) / 2;
     
     if(num == array[mid]) {
         return mid + 1;
