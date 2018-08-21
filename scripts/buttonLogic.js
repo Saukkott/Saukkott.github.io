@@ -92,3 +92,4 @@ function selectedSort(sortType, array) {
     if(sortType == "binaryInsertionSort") {
         binaryInsertionSort(array);
     }
+}
