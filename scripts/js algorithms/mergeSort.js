@@ -1,4 +1,4 @@
-unction mergeSort(arr, start, end) {
+function mergeSort(arr, start, end) {
     if(start < end) {
         var mid = Math.floor((start + end) / 2);
         
