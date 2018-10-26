@@ -38,6 +38,7 @@ html,body{
   padding: 20px;
 }
 .textContainer {
+  padding-top: 20px;
   position: relative;
   background-color: lightgrey;
   width: 90%;
